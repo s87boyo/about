@@ -1,0 +1,106 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아라 - 링크 모음</title>
+    <style>
+        /* 1. 전체 배경 및 기본 폰트 설정 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            background-color: #f4f4f9; /* 배경색 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 20px; /* 위아래 여백 */
+            margin: 0;
+        }
+
+        /* 2. 프로필 영역 스타일 */
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* 프로필 이미지(협업문의 이미지 활용) 스타일 추가 */
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px; /* 이미지를 부드러운 사각형으로 */
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+
+        .profile p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* 3. 링크 버튼들을 묶는 컨테이너 */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px; /* 버튼의 최대 너비 */
+            gap: 15px; /* 버튼 사이의 간격 */
+        }
+
+        /* 4. 개별 링크 버튼 스타일 */
+        .link-button {
+            display: block;
+            padding: 18px 20px;
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none; /* 밑줄 제거 */
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px; /* 버튼 모서리 둥글게 */
+            border: 1px solid #eaeaea;
+            transition: all 0.2s ease; /* 부드러운 애니메이션 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02); /* 살짝 그림자 */
+        }
+
+        /* 5. 마우스를 올렸을 때(호버) 효과 */
+        .link-button:hover {
+            background-color: #333333; /* 검은색으로 변경 */
+            color: #ffffff; /* 글씨는 흰색으로 */
+            transform: translateY(-2px); /* 살짝 위로 떠오르는 효과 */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 프로필 영역 -->
+    <div class="profile">
+        <!-- 블로그에서 쓰시던 협업문의 이미지를 프로필 로고처럼 배치했습니다 -->
+        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjIy/MDAxNzc2MTUxNDU0ODE3.Sa5Q8nJMg5p7JTQ7Bdr8fi2FNyGgvxFu3MhZ4Je8whIg.JhN5quZpo3u9fXTSvwmzIP8aKKH2esdWgit9TnVnhWMg.PNG/협업문의.png?type=w966" alt="협업문의">
+        <h1>아라</h1>
+        <p>안녕하세요. 네이버 인플루언서 아라입니다</p>
+    </div>
+
+    <!-- 링크 버튼 영역 -->
+    <div class="links-container">
+        <!-- 메일 연결 링크 (제목 자동입력 유지) -->
+        <a href="mailto:s87boyo@naver.com?subject=[IT테크 제휴 문의]" class="link-button">✉️ 제휴 메일 보내기</a>
+        
+        <!-- 카카오톡 오픈채팅방 연결 링크 -->
+        <a href="https://open.kakao.com/o/sdt3LIri" class="link-button" target="_blank">💬 카카오톡 오픈채팅방</a>
+    </div>
+
+</body>
+</html>
+
+
+```
